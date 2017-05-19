@@ -4,7 +4,6 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Ofl.Collections.Generic;
 
 namespace Ofl.Interactive.Async
 {
@@ -17,8 +16,7 @@ namespace Ofl.Interactive.Async
             if (source == null) throw new ArgumentNullException(nameof(source));
 
             // Create the list, wrap.
-            return (await source.ToList(cancellationToken).ConfigureAwait(false)).
-                WrapInReadOnlyCollection();
+            return new ReadOnlyCollection<T>(await source.ToList(cancellationToken).ConfigureAwait(false));
         }
     }
 }
