@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
@@ -10,6 +9,17 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofl.Interactive.Async", "src\Ofl.Interactive.Async\Ofl.Interactive.Async.csproj", "{5A395462-79F2-45A2-94AB-9EC05161ABFD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofl.Interactive.Async.Tests", "test\Ofl.Interactive.Async.Tests\Ofl.Interactive.Async.Tests.csproj", "{A87BCE4A-0262-4266-A018-ECCFE8B171A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-level items", "solution-level items", "{71701FE5-2D0F-4AFC-9DE4-0CC7D5CA876B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		appveyor.yml = appveyor.yml
+		directory.build.props = directory.build.props
+		LICENSE = LICENSE
+		Ofl.Interactive.Async.sln.DotSettings = Ofl.Interactive.Async.sln.DotSettings
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,5 +62,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5A395462-79F2-45A2-94AB-9EC05161ABFD} = {F0469A24-866F-4C98-90DF-8AFA48C2D899}
 		{A87BCE4A-0262-4266-A018-ECCFE8B171A3} = {7F62FBCD-4BA2-4DA9-9EFF-6998C3EE6175}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD866AE3-4C40-4F6B-8CC8-56ABC3D6F581}
 	EndGlobalSection
 EndGlobal
